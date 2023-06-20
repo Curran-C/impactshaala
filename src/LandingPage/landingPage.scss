@@ -1,0 +1,354 @@
+.landingPage {
+    .dot {
+        height: 1000px;
+        width: 2300px;
+        position: absolute;
+        top: -350px;
+        left: -350px;
+        z-index: -10;
+        border-radius: 45% 55% 35% 65% / 41% 23% 77% 59%  ;
+        overflow-x: hidden;
+        background-color: #cddded;
+    }
+    .hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        .heroContainer {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+
+            .left {
+                padding-left: 100px;
+                width: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #2F2D38;
+                }
+            }
+            .right {
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                img {
+                    padding-top: 30px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    .coreValues {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        .coreValuesContainer {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            justify-content: center;
+            .titleContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                .titleWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    // gap: 10px;
+                    .line {
+                        text-align: left;
+                        width: 110px;
+                        height: 14px;
+                        border-radius: 50px;
+                        background-color:#02C8AF;
+                    }
+                    .title {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 45px;
+                    }
+                }
+                    .subTitle {
+                        font-weight: 400;
+                        font-size: 23px;
+                    }
+            }
+            .cardContainer {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 60px;
+            }
+        }
+    }
+
+    .videoSection {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        .videoSectionContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            .titleContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                width: 950px;
+                .titleWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    // gap: 10px;
+                    .line {
+                        text-align: left;
+                        width: 110px;
+                        height: 14px;
+                        border-radius: 50px;
+                        background-color:#02C8AF;
+                    }
+                    .title {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 45px;
+                    }
+                }
+            }
+            .videoPlaceholder {
+                background-color: #D9D9D9;
+                margin-top: 50px;
+                border-radius: 25px;
+                height: 500px;
+                width: 1000px;
+            }
+        }
+    }
+
+    .beforeAboutUs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        .beforeAboutUsContainer {
+            display: flex;
+            width: 90%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .beforeAboutUsWrapperOne {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 700px;
+                    align-items: start;
+                    .titleContainer {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .line {
+                            text-align: left;
+                            width: 110px;
+                            height: 14px;
+                            border-radius: 50px;
+                            background-color:#02C8AF;
+                        }
+                        .title {
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 40px;
+                        }
+                    }
+                    .textContainer {
+                        width: 600px;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+                        span {
+                            font-size: 18px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+                .right {
+                    img {
+                        width: 500px;
+                    }
+                }
+            } 
+            
+            .beforeAboutUsWrapperTwo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 100px;
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 700px;
+                    align-items: start;
+                    .titleContainer {
+                        display: flex;
+                        flex-direction: column;
+                        .line {
+                            text-align: left;
+                            width: 110px;
+                            height: 14px;
+                            border-radius: 50px;
+                            background-color:#02C8AF;
+                        }
+                        .title {
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 40px;
+                        }
+                    }
+                    .textContainer {
+                        width: 600px;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+                        span {
+                            font-size: 18px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+                .left {
+                    img {
+                        width: 500px;
+                    }
+                }
+            } 
+        }
+    }
+
+    .aboutus {
+        width: 100%;
+        margin-top: 100px;
+        .aboutusContainer {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+            .titleContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .titleWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    // gap: 10px;
+                    .line {
+                        text-align: left;
+                        width: 110px;
+                        height: 14px;
+                        border-radius: 50px;
+                        background-color:#02C8AF;
+                    }
+                    .title {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 45px;
+                    }
+                }
+                .textContainer {
+                    width: 900px;
+                    display: flex;
+                    margin-top: 30px;
+                    span {
+                        line-height: 30px;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+            .threequestions {
+                display: flex;
+                flex-direction: column;
+                margin: 40px 50px auto 50px;
+                .firstQuestionContainer {
+                    display: flex;
+                    width: 100%;
+                    align-items: start;
+                    justify-content: start;
+                    .firstQuestionWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        width: 400px;
+                        padding: 50px 40px;
+                        background-color: #D9DEF2;
+                        border-radius: 25px;
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .secondQuestionContainer {
+                    display: flex;
+                    width: 100%;
+                    align-items: start;
+                    justify-content: center;
+                    margin-top: 30px;
+                    .secondQuestionWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        width: 400px;
+                        padding: 50px 40px;
+                        background-color: #D9DEF2;
+                        border-radius: 25px;
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .thirdQuestionContainer {
+                    display: flex;
+                    width: 100%;
+                    align-items: start;
+                    justify-content: end;
+                    margin-top: 30px;
+                    .thirdQuestionWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        width: 400px;
+                        padding: 50px 40px;
+                        background-color: #D9DEF2;
+                        border-radius: 25px;
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
