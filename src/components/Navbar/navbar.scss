@@ -24,6 +24,10 @@
                 border:none;
                 color: white;                
                 border-radius: 15px;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 0px 5px 1px #1a7fe3;
+                }
             }
 
         }
