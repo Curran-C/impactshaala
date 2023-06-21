@@ -1,15 +1,27 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import "./landingPage.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import {
   aboutus1,
   aboutus2,
-  corevalue1,
   heroImage,
+  insta,
+  linkedin,
+  tick,
 } from "../assets/landingPage/index.js";
 import Card from "../components/Card/Card";
-import { coreValues } from "../constants";
+import {
+  beneficiaries,
+  coreValues,
+  corporates,
+  educationalInstitutions,
+  socialOrgos,
+  students,
+} from "../constants";
+import PartnerCard from "../components/PartnerCard/PartnerCard";
+import { Carousel } from "react-responsive-carousel";
 
 const LandingPage = () => {
   return (
@@ -190,6 +202,117 @@ const LandingPage = () => {
                 <h3>How?</h3>
                 <p></p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* beneficiaries */}
+      <div className="beneficiaries">
+        <div className="beneficiariesContainer">
+          <div className="titleContainer">
+            <div className="titleWrapper">
+              <div className="line"></div>
+              <span className="title">Beneficiaries</span>
+            </div>
+            <div className="textContainer">
+              <span>
+                Lorem ipsum dolor sit amet consectetur,Qorem ipsum dolor sit
+                amet consectetur
+              </span>
+            </div>
+          </div>
+
+          {/* checks */}
+          <div className="benificiaryNamesContainer">
+            {beneficiaries.map((beneficiary) => (
+              <div className="beneficiaryNames" key={beneficiary}>
+                <img src={tick} alt="" />
+                <span>{beneficiary}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* partners */}
+      <div className="partners">
+        <div className="partnersContainer">
+          <div className="titleContainer">
+            <div className="titleWrapper">
+              <div className="line"></div>
+              <span className="title">Partners With Us</span>
+            </div>
+          </div>
+
+          <div className="partnerCardContainer">
+            <PartnerCard
+              list={educationalInstitutions}
+              title="Educational Institutions"
+            />
+            <PartnerCard list={students} title="Students" />
+            <PartnerCard list={corporates} title="Corporates" />
+            <PartnerCard list={socialOrgos} title="Social Organisations" />
+          </div>
+        </div>
+      </div>
+
+      {/* blog */}
+      <div className="blog">
+        <div className="blogContainer">
+          <div className="titleContainer">
+            <div className="titleWrapper">
+              <div className="line"></div>
+              <span className="title">Blog&apos;s</span>
+            </div>
+            <div className="textContainer">
+              <span>
+                Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Curabitur tempus urna at turpis
+                condimentum lobortis.
+              </span>
+            </div>
+          </div>
+          <div className="carouselContainer">
+            <div className="carouselWrapper">
+              <Carousel className="carousel" autoPlay>
+                <div>
+                  <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+                <div>
+                  <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+                <div>
+                  <img src="https://picsum.photos/200/200" alt="" />
+                </div>
+              </Carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* footer */}
+      <div className="footer">
+        <div className="footerContainer">
+          <h3>Join the Impact Movement</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero e .
+          </p>
+          <div className="email">
+            <input type="text" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
+          <div className="links">
+            <div>
+              <span>Terms & Conditions</span>
+              <span>Privacy Policy</span>
+            </div>
+            <div>
+              <img src={insta} alt="" />
+              <img src={linkedin} alt="" />
             </div>
           </div>
         </div>

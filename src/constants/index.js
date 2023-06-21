@@ -18,4 +18,47 @@ const coreValues = [
   },
 ];
 
-export { coreValues };
+const beneficiaries = [
+  "Educational Institutions",
+  "Social Organisation",
+  "Students",
+  "Local Citizens",
+  "Corporates",
+];
+
+const educationalInstitutions = [
+  "Quality Education",
+  "Employability Skills",
+  "Individual Learning",
+  "Real-Time Learning",
+];
+
+const students = [
+  "Life Readiness",
+  "Social Awareness",
+  "Fresher Job Opportunities",
+  "Individual Social Responsibility",
+];
+
+const corporates = [
+  "Brand Promotion",
+  "Educational Impact",
+  "CSR Project Assistance",
+  "Skilled Human Resource",
+];
+
+const socialOrgos = [
+  "NGO Branding",
+  "Corporate Connect",
+  "Resource Mobilization",
+  "Volunteer Engagement",
+];
+
+export {
+  coreValues,
+  beneficiaries,
+  educationalInstitutions,
+  students,
+  corporates,
+  socialOrgos,
+};
