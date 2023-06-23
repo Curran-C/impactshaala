@@ -5,6 +5,10 @@ body {
   margin: 0px;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+}
+
 .carousel-root .carousel {
   height: 500px;
   object-fit: contain;

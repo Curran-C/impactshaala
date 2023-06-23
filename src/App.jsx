@@ -6,6 +6,7 @@ import LandingPage from "./LandingPage/LandingPage";
 import SignUp from "./pages/signUp/SignUp";
 import CompanyDetails from "./pages/companyDetails/CompanyDetails";
 import Location from "./pages/location/Location";
+import CompanyProfile from "./pages/CompanyProfile/CompanyProfile";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signup/companydetails" element={<CompanyDetails />} />
         <Route path="/signup/companylocation" element={<Location />} />
+        <Route path="/company/profile" element={<CompanyProfile />} />
+        {/*ṇeed to add id to company/profile  */}
       </Routes>
     </BrowserRouter>
   );

@@ -10,6 +10,32 @@
         overflow-x: hidden;
         background-color: #cddded;
     }
+    .blob1 {
+        position: absolute;
+        height: 800px;
+        z-index: -9;
+        right: -200px;
+        rotate: -10deg;
+        top: -300px;
+    }
+    .leftblob {
+        position: absolute;
+        height: 800px;
+        top: 1500px;
+        z-index: -10;
+    }
+    .rightblob, .rightblob2 {
+        position: absolute;
+        height: 800px;
+        top: 2500px;
+        right: 0;
+        z-index: -10;
+
+    }
+    .rightblob2 {
+        width: 800px;
+        top: 4600px;
+    }
     .hero {
         width: 100%;
         display: flex;

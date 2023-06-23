@@ -7,6 +7,8 @@ import aboutus2 from "./aboutus2.png";
 import tick from "./tick.png";
 import insta from "./insta.png";
 import linkedin from "./linkedin.png";
+import blob1 from "./blob1.png";
+import blob2 from "./blob2.png";
 
 export {
   heroImage,
@@ -18,4 +20,6 @@ export {
   tick,
   insta,
   linkedin,
+  blob1,
+  blob2,
 };

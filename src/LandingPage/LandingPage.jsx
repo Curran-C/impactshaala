@@ -6,6 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {
   aboutus1,
   aboutus2,
+  blob1,
+  blob2,
   heroImage,
   insta,
   linkedin,
@@ -29,6 +31,15 @@ const LandingPage = () => {
       <Navbar />
       {/* background circle */}
       <div className="dot"></div>
+      {/* hero left blob */}
+      
+
+      <img className="blob1" src={blob2} alt="" />
+
+      {/* blob1 */}
+      <img className="leftblob" src={blob1} alt="" />
+      <img className="rightblob" src={blob1} alt="" />
+      <img className="rightblob2" src={blob1} alt="" />
 
       {/* hero */}
       <div className="hero">

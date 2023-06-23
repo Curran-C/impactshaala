@@ -1,7 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "./location.scss";
 
 const Location = () => {
-  const handleSubmit = () => {};
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    navigate('/company/profile')
+  };
 
   return (
     <div className="location">
