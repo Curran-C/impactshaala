@@ -5,15 +5,15 @@ const Location = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    navigate('/company/profile')
+    navigate("/company/profile");
   };
 
   return (
     <div className="location">
       <div className="signup white">
         <div className="upload">
-          <span>Location</span>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <span>Cover Photo</span>
+          <input type="file" className="imageupload" name="filename"></input>
         </div>
       </div>
 
@@ -28,6 +28,7 @@ const Location = () => {
             <input placeholder="City" type="text" />
           </div>
           <input type="text" placeholder="State" />
+          <input type="number" placeholder="Phone number" />
         </div>
 
         <button type="submit">Next</button>

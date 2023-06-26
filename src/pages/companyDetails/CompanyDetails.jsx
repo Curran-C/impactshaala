@@ -25,8 +25,8 @@ const CompanyDetails = () => {
 
       <div className="signup white">
         <div className="upload">
-          <span>Select from your PC</span>
-          <img src={upload} alt="" />
+          <span>Profile Picture</span>
+          {/* <img src={upload} alt="" /> */}
         </div>
         <input type="file" className="imageupload" name="filename"></input>
       </div>
