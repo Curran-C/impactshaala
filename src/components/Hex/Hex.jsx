@@ -1,5 +1,5 @@
 import "./hex.scss";
-import { hex } from "../../assets/companyProfile";
+import { hex } from "../../assets/profile";
 
 const Hex = () => {
   return (

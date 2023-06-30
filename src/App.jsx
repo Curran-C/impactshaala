@@ -2,11 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./index.css";
 
-import LandingPage from "./LandingPage/LandingPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import SignUp from "./pages/signUp/SignUp";
-import CompanyDetails from "./pages/companyDetails/CompanyDetails";
-import Location from "./pages/location/Location";
-import CompanyProfile from "./pages/CompanyProfile/CompanyProfile";
+import Profile from "./pages/Profile/Profile";
+import GoogleSignUp from "./pages/GoogleSignUp/GoogleSignUp";
 
 function App() {
   return (
@@ -14,9 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/signup/companydetails" element={<CompanyDetails />} />
-        <Route path="/signup/companylocation" element={<Location />} />
-        <Route path="/company/profile" element={<CompanyProfile />} />
+        <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/googlesignup/:id" element={<GoogleSignUp />} />
+
         {/*ṇeed to add id to company/profile  */}
       </Routes>
     </BrowserRouter>

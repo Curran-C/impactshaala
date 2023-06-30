@@ -6,5 +6,16 @@ import savedposts from "./savedposts.svg";
 import corporate from "./corporate.svg";
 import location from "./location.svg";
 import hex from "./hex.png";
+import nopfp from "./nopfp.png";
 
-export { chat, home, feedback, hex, logout, savedposts, corporate, location };
+export {
+  chat,
+  home,
+  feedback,
+  hex,
+  logout,
+  savedposts,
+  corporate,
+  location,
+  nopfp,
+};

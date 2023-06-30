@@ -1,37 +1,34 @@
-import { corporate, location } from "../../assets/companyProfile";
+
+import { corporate, location, nopfp } from "../../assets/profile";
 import Hex from "../Hex/Hex";
 import ProfileLinks from "../ProfileLinks/ProfileLinks";
-import "./companyProfileFeed.scss";
+import "./profileFeed.scss";
 
-const CompanyProfileFeed = () => {
+
+const ProfileFeed = ({ user }) => {
   return (
     <div className="profile">
+      {console.log(user)}
       <div className="coverimg">
-        <img src="https://picsum.photos/1000/300" alt="" />
+        <img src={user.coverPic} alt="" />
       </div>
       <div className="info">
         <div className="info-container">
           <div className="pfp-text">
-            <img className="pfp" src="https://picsum.photos/200/300" alt="" />
+            <img className="pfp" src={user.pfp || nopfp} alt="" />
             <div className="company-info">
-              <h3>Company Name</h3>
+              <h3>{user.companyName}</h3>
               <div className="profile-links">
                 <img className="img" src={corporate} alt="" />
-                <span className="linkText">corporate</span>
+                <span className="linkText">{user.stakeholder}</span>
               </div>
               <div className="profile-links">
                 <img className="img" src={location} alt="" />
-                <span className="linkText">location</span>
+                <span className="linkText">{user.city}</span>
               </div>
             </div>
             <div className="company-about">
-              <p>
-                Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Curabitur tempus urna at turpis
-                condimentum lobortis.
-              </p>
+              <p>{user.description}</p>
             </div>
           </div>
           <div className="stats">
@@ -60,4 +57,4 @@ const CompanyProfileFeed = () => {
   );
 };
 
-export default CompanyProfileFeed;
+export default ProfileFeed;

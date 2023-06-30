@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import "./landingPage.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -12,8 +12,8 @@ import {
   insta,
   linkedin,
   tick,
-} from "../assets/landingPage/index.js";
-import Card from "../components/Card/Card";
+} from "../../assets/landingPage/index.js";
+import Card from "../../components/Card/Card";
 import {
   beneficiaries,
   coreValues,
@@ -21,8 +21,8 @@ import {
   educationalInstitutions,
   socialOrgos,
   students,
-} from "../constants";
-import PartnerCard from "../components/PartnerCard/PartnerCard";
+} from "../../constants";
+import PartnerCard from "../../components/PartnerCard/PartnerCard";
 import { Carousel } from "react-responsive-carousel";
 
 const LandingPage = () => {
@@ -32,7 +32,6 @@ const LandingPage = () => {
       {/* background circle */}
       <div className="dot"></div>
       {/* hero left blob */}
-      
 
       <img className="blob1" src={blob2} alt="" />
 
